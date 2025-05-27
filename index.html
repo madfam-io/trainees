@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADFAM 2025 - Programa de Trainees</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #34a853;
+            --accent-color: #fbbc04;
+            --dark-color: #1e293b;
+            --light-color: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #1a73e8 0%, #34a853 100%);
+            color: white;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--secondary-color);
+        }
+        
+        .card {
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .route-card {
+            border-top: 4px solid var(--primary-color);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary-color);
+        }
+        
+        .value-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .value-item::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+        }
+        
+        .testimonial {
+            position: relative;
+        }
+        
+        .testimonial::before {
+            content: """;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            font-size: 4rem;
+            color: rgba(26, 115, 232, 0.2);
+            font-family: Georgia, serif;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        th {
+            background-color: #f1f5f9;
+            font-weight: 600;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .eco-icon {
+            font-size: 1.5rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgba(52, 168, 83, 0.1);
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+         {
+            .page-break {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <header class="hero-section py-16 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">🌟 PROGRAMA DE TRAINEES MADFAM 2025</h1>
+            <h2 class="text-xl md:text-2xl font-medium mb-6">Transformación Digital y Fabricación Sostenible para el Futuro de América Latina</h2>
+            <h3 class="text-lg md:text-xl font-medium mb-8">GUÍA COMPLETA DEL PROGRAMA</h3>
+            <a href="#apply" class="cta-button">Aplica Ahora</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center flex-wrap gap-4">
+                <a href="#about" class="text-gray-700 hover:text-primary-500 px-3 py-2">Quiénes Somos</a>
+                <a href="#program" class="text-gray-700 hover:text-primary-500 px-3 py-2">El Programa</a>
+                <a href="#routes" class="text-gray-700 hover:text-primary-500 px-3 py-2">Rutas de Especialización</a>
+                <a href="#career" class="text-gray-700 hover:text-primary-500 px-3 py-2">Desarrollo Profesional</a>
+                <a href="#selection" class="text-gray-700 hover:text-primary-500 px-3 py-2">Proceso de Selección</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary-500 px-3 py-2">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- PART I: Discovering MADFAM -->
+        <section id="about" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">PARTE I: DESCUBRIENDO MADFAM</h2>
+            
+            <!-- Who We Are -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">🏢 Quiénes Somos</h3>
+                <p class="text-lg mb-6">
+                    MADFAM (Manufactura Aditiva, Digitalización y Fabricación Avanzada Multimaterial) es una microempresa mexicana líder en transformación digital industrial y fabricación sostenible desde nuestra sede en Cuernavaca, Morelos—la "Ciudad de la Eterna Primavera."
+                </p>
+                <p class="text-lg mb-6">
+                    Somos pioneros en la convergencia tecnológica, construyendo puentes entre:
+                </p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                        <span class="mr-3 text-green-600">🌿</span>
+                        <span>Filosofía Solarpunk y aplicaciones industriales prácticas</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-green-600">♻️</span>
+                        <span>Economía circular y manufactura avanzada</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-green-600">🤖</span>
+                        <span>Automatización inteligente e innovación humana</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-green-600">🏭</span>
+                        <span>Industria 4.0 y responsabilidad ambiental</span>
+                    </li>
+                </ul>
+                
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold mb-4">Nuestro ADN Empresarial</h4>
+                    <ul class="space-y-2">
+                        <li><strong>Fundada y Dirigida por:</strong> Aldo Ruiz Luna, emprendedor tecnológico comprometido con la sostenibilidad y la democratización tecnológica</li>
+                        <li><strong>Modelo Operativo:</strong> S.A.S. de C.V. con gestión digital avanzada</li>
+                        <li><strong>Alcance Actual:</strong> América Latina y América del Norte</li>
+                        <li><strong>Planes de Expansión:</strong> Comunidad de Países de Lengua Portuguesa</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold mb-4">Lo Que Nos Distingue</h4>
+                    <ol class="list-decimal pl-5 space-y-2">
+                        <li><strong>Operaciones Digitalizadas:</strong> Sistemas de gestión basados en IA y automatización</li>
+                        <li><strong>Compromiso Solarpunk:</strong> Cada proyecto alineado con principios de sostenibilidad</li>
+                        <li><strong>Innovación en Materiales:</strong> Especialistas en reciclaje y materiales alternativos</li>
+                        <li><strong>Ecosistema Digital Integrado:</strong> 6 marcas conectadas digitalmente</li>
+                        <li><strong>Stack Tecnológico DRAGON:</strong> Framework open-source para transformación digital</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- Mission and Vision -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">🎯 Nuestra Misión y Visión</h3>
+                
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold mb-3">Misión</h4>
+                    <p class="text-lg">
+                        Liderar la transformación digital de la manufactura latinoamericana mediante soluciones sostenibles, accesibles e innovadoras que empoderen a empresas y comunidades.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold mb-3">Visión</h4>
+                    <p class="text-lg">
+                        Convertirnos en el referente regional de manufactura sostenible digitalmente habilitada, creando un ecosistema donde la tecnología impulse el desarrollo económico sin comprometer nuestro planeta.
+                    </p>
+                </div>
+                
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold mb-4">Valores Fundamentales</h4>
+                    <ul class="space-y-3">
+                        <li class="value-item"><span class="mr-2">🌱</span> <strong>Optimismo Tecnológico Responsable:</strong> Creemos en la tecnología como herramienta de progreso sostenible</li>
+                        <li class="value-item"><span class="mr-2">🛠️</span> <strong>Empoderamiento DIY:</strong> Enseñar a otros a crear</li>
+                        <li class="value-item"><span class="mr-2">♻️</span> <strong>Circularidad Económica:</strong> Transformar residuos en recursos valiosos</li>
+                        <li class="value-item"><span class="mr-2">💻</span> <strong>Digitalización Democratizada:</strong> Hacer accesible la tecnología avanzada</li>
+                        <li class="value-item"><span class="mr-2">🤝</span> <strong>Colaboración Abierta:</strong> Compartir conocimiento para multiplicar impacto</li>
+                        <li class="value-item"><span class="mr-2">📊</span> <strong>Transparencia Operativa:</strong> Métricas claras y comunicación abierta</li>
+                        <li class="value-item"><span class="mr-2">🔧</span> <strong>Innovación Práctica:</strong> Soluciones reales para problemas reales</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Ecosystem of Services -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">📦 Nuestro Ecosistema de Servicios</h3>
+                
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold mb-4">La Pirámide de Transformación Digital MADFAM</h4>
+                    
+                    <div class="grid md:grid-cols-1 gap-6">
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">Nivel 5: Consultoría Estratégica 🏔️</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Transformación digital integral</li>
+                                <li>Roadmaps de sostenibilidad industrial</li>
+                                <li>Implementación de economía circular</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">Nivel 4: Automatización Inteligente 🤖</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Sistemas de producción automatizados</li>
+                                <li>Monitoreo IoT y análisis de datos</li>
+                                <li>Optimización de procesos con IA</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-green-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">Nivel 3: Soluciones Sostenibles 🧰</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Sistemas de reciclaje de materiales</li>
+                                <li>Kits de fabricación ecológica</li>
+                                <li>Herramientas de medición de impacto</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-green-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">Nivel 2: Digitalización de Procesos 🔧</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Flujos de trabajo digitales</li>
+                                <li>Trazabilidad de producción</li>
+                                <li>Gestión de calidad digital</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-green-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">Nivel 1: Fabricación Avanzada 🎯</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Impresión 3D con materiales reciclados</li>
+                                <li>Prototipado rápido sostenible</li>
+                                <li>Producción bajo demanda</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio of Brands -->
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h3 class="text-2xl font-bold mb-6 section-title">🧬 Nuestro Portafolio de Marcas</h3>
+                
+                <div class="table-container mb-6">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Marca</th>
+                                <th>Mercado</th>
+                                <th>Enfoque</th>
+                                <th>Impacto Sostenible</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MADFAM</td>
+                                <td>B2B</td>
+                                <td>Transformación digital industrial</td>
+                                <td>Reducción 40% residuos en clientes</td>
+                            </tr>
+                            <tr>
+                                <td>Primavera 3D</td>
+                                <td>B2C</td>
+                                <td>Educación en fabricación digital</td>
+                                <td>500+ makers capacitados</td>
+                            </tr>
+                            <tr>
+                                <td>MADFAM Academy</td>
+                                <td>B2B/B2C</td>
+                                <td>Formación técnica avanzada</td>
+                                <td>Certificaciones en sostenibilidad</td>
+                            </tr>
+                            <tr>
+                                <td>Mostros</td>
+                                <td>B2C</td>
+                                <td>Productos de materiales reciclados</td>
+                                <td>100% PLA biodegradable</td>
+                            </tr>
+                            <tr>
+                                <td>World Of Maps</td>
+                                <td>B2C</td>
+                                <td>Herramientas educativas sostenibles</td>
+                                <td>Materiales eco-friendly</td>
+                            </tr>
+                            <tr>
+                                <td>Elysium</td>
+                                <td>B2C</td>
+                                <td>Activos digitales y virtualización</td>
+                                <td>Reducción huella física</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PART II: The Apprentice Program -->
+        <section id="program" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">PARTE II: EL PROGRAMA DE APRENDICES</h2>
+            
+            <!-- Program Overview -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">🚀 Resumen del Programa</h3>
+                
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold mb-3">Formando Líderes en Transformación Digital Sostenible</h4>
+                    <p class="text-lg mb-6">
+                        Nuestro programa de aprendices está diseñado para crear agentes de cambio capaces de liderar la transformación digital mientras mantienen un compromiso inquebrantable con la sostenibilidad.
+                    </p>
+                </div>
+                
+                <div class="mb-8 grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold mb-3">Estructura del Programa</h4>
+                        <ul class="space-y-2">
+                            <li><strong>Duración:</strong> 12-24 meses</li>
+                            <li><strong>Formato:</strong> Híbrido (Capacitación remota → Práctica intensiva en Cuernavaca)</li>
+                            <li><strong>Especializaciones:</strong> 4 rutas de transformación</li>
+                            <li><strong>Certificaciones:</strong> Avaladas por MADFAM Academy</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold mb-3">El Viaje de Transformación</h4>
+                        <div class="space-y-4">
+                            <div class="timeline-item">FASE 1: Fundamentos Digitales (1~3 meses remotos)</div>
+                            <div class="timeline-item">FASE 2: Práctica Intensiva (1~3 meses en Cuernavaca)</div>
+                            <div class="timeline-item">FASE 3: Liderazgo de Proyectos (2~6 meses)</div>
+                            <div class="timeline-item">GRADUACIÓN: Profesional Certificado en Transformación Digital Sostenible</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Phase 1: Digital Foundations -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">📍 Fase 1: Fundamentos Digitales (Remoto)</h3>
+                
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold mb-4">Tu Capacitación Digital</h4>
+                    
+                    <div class="mb-6">
+                        <h5 class="font-bold mb-2">Mes 1: Inmersión en Filosofía Solarpunk</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Principios de diseño sostenible</li>
+                            <li>Economía circular aplicada</li>
+                            <li>Introducción a sistemas SPARK y PENNY</li>
+                            <li>Métricas de impacto ambiental</li>
+                            <li>Sesiones virtuales con mentores</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h5 class="font-bold mb-2">Mes 2-3: Desarrollo de Competencias Digitales</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Herramientas de diseño paramétrico</li>
+                            <li>Análisis de ciclo de vida (LCA)</li>
+                            <li>Automatización de procesos básicos</li>
+                            <li>Metodologías ágiles sostenibles</li>
+                            <li>Proyecto inicial de impacto</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h5 class="font-bold mb-2">Mes 4-6: Preparación para Inmersión</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Proyecto remoto con impacto medible</li>
+                            <li>Colaboración con equipos en México</li>
+                            <li>Plan de proyecto sostenible</li>
+                            <li>Preparación cultural y logística</li>
+                            <li>Portfolio de transformación digital</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Recursos Digitales Proporcionados</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="mr-3 text-blue-600">🖥️</span>
+                                <span>Licencias de software especializado</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-blue-600">📚</span>
+                                <span>Biblioteca digital de sostenibilidad</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-blue-600">🤖</span>
+                                <span>Acceso a plataformas de automatización</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-blue-600">🎓</span>
+                                <span>Certificaciones en línea incluidas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-blue-600">💬</span>
+                                <span>Red profesional MADFAM</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Entregables de Impacto</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Dashboard de métricas sostenibles</li>
+                            <li>Propuesta de optimización de procesos</li>
+                            <li>Contribución a proyectos open-source</li>
+                            <li>Blog sobre transformación digital</li>
+                            <li>Caso de estudio documentado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Phase 2: Practical Immersion -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">🏡 Fase 2: Inmersión Práctica en Cuernavaca</h3>
+                
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold mb-4">Centro de Innovación Sostenible</h4>
+                    
+                    <div class="mb-6">
+                        <h5 class="font-bold mb-2">Por qué Cuernavaca es Ideal</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Costos operativos optimizados</li>
+                            <li>Ecosistema ecológico vibrante</li>
+                            <li>Proximidad a CDMX (90 min)</li>
+                            <li>Calidad de vida excepcional</li>
+                            <li>Comunidad maker en desarrollo</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold mb-4">Tu Experiencia Profesional</h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <h5 class="font-bold mb-2">Infraestructura de Trabajo</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Laboratorio de fabricación digital</li>
+                                <li>Centro de reciclaje de materiales</li>
+                                <li>Estaciones de trabajo equipadas</li>
+                                <li>Sala de prototipado rápido</li>
+                                <li>Área de testing sostenible</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h5 class="font-bold mb-2">Rutina Profesional</h5>
+                            <ul class="list-disc pl-5">
+                                <li>8:30 AM: Revisión de métricas de sostenibilidad</li>
+                                <li>9:00 AM: Standup con equipo multidisciplinario</li>
+                                <li>9:30 AM: Desarrollo de proyectos</li>
+                                <li>1:00 PM: Almuerzo sostenible (productos locales)</li>
+                                <li>2:30 PM: Sesiones de innovación colaborativa</li>
+                                <li>5:00 PM: Documentación y análisis</li>
+                                <li>6:00 PM: Workshops y networking</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h5 class="font-bold mb-2">Actividades de Desarrollo Profesional</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Visitas a plantas de manufactura</li>
+                            <li>Conferencias de transformación digital</li>
+                            <li>Hackathons de sostenibilidad</li>
+                            <li>Presentaciones a clientes reales</li>
+                            <li>Certificaciones técnicas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Specialization Routes -->
+        <section id="routes" class="mb-20">
+            <h3 class="text-2xl font-bold mb-8 text-center">🎓 Las Cuatro Rutas de Especialización</h3>
+            
+            <div class="mb-6 text-center">
+                <h4 class="text-xl font-semibold">Elige tu Camino de Impacto</h4>
+            </div>
+            
+            <!-- Route 1 -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8 route-card">
+                <h4 class="text-xl font-bold mb-4">🔧 Ruta 1: Fabricación Sostenible Avanzada</h4>
+                <p class="mb-4"><strong>Enfoque:</strong> Revolucionar la manufactura mediante materiales reciclados y procesos circulares</p>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <h5 class="font-bold mb-2">Competencias Remotas</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Diseño para manufactura sostenible (DfS)</li>
+                            <li>Análisis de materiales eco-compatibles</li>
+                            <li>Certificaciones en economía circular</li>
+                            <li>Modelado 3D para optimización de material</li>
+                            <li>Cálculo de huella de carbono</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h5 class="font-bold mb-2">Proyectos Principales en Cuernavaca</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Laboratorio PET-G: Sistema completo de reciclaje y extrusión</li>
+                            <li>Optimización de Procesos: Reducción 50% de desperdicios</li>
+                            <li>Nuevos Materiales: Investigación en biocompuestos</li>
+                            <li>Producción Cero Residuos: Implementación práctica</li>
+                            <li>Métricas de Impacto: Dashboard en tiempo real</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h5 class="font-bold mb-2">Tecnologías y Herramientas</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Impresión 3D multimaterial</li>
+                            <li>Sistemas de reciclaje mecánico</li>
+                            <li>Software de análisis LCA</li>
+                            <li>Sensores IoT ambientales</li>
+                            <li>Plataformas de trazabilidad</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h5 class="font-bold mb-2">Certificaciones Incluidas</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Diseño Circular Certificado</li>
+                            <li>Especialista en Materiales Sostenibles</li>
+                            <li>Auditor de Impacto Ambiental</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Route 2 -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8 route-card" style="border-color: #34a853;">
+                <h4 class="text-xl font-bold mb-4">💻 Ruta 2: Transformación Digital Industrial</h4>
+                <p class="mb-4"><strong>Enfoque:</strong> Digitalizar y optimizar procesos de manufactura para máxima eficiencia y mínimo impacto</p>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <h5 class="font-bold mb-2">Competencias Remotas</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Arquitectura de sistemas digitales</li>
+                            <li>Programación para automatización</li>
+                            <li>Análisis de datos industriales</li>
+                            <li>Diseño de interfaces de usuario</li>
+                            <li>Fundamentos de IA aplicada</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h5 class="font-bold mb-2">Proyectos Principales en Cuernavaca</h5>
+                        <ul class="list-disc pl-5">
+                            <li>SPARK Evolution: Sistema de gestión del conocimiento</li>
+                            <li>PENNY Enhancement: Automatización inteligente de procesos</li>
+                            <li>Digital Twins: Gemelos digitales para manufactura</li>
+                            <li>IoT Industrial: Red de sensores inteligentes</li>
+                            <li>Analytics Dashboard: Visualización de KPIs sostenibles</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h5 class="font-bold mb-2">Stack Tecnológico</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Automatización: n8n, Node-RED, Python</li>
+                            <li>Análisis: Pandas, Grafana, PowerBI</li>
+                            <li>IoT: Arduino, Raspberry Pi, LoRaWAN</li>
+                            <li>Bases de Datos: PostgreSQL, InfluxDB</li>
+                            <li>Cloud: AWS, Azure IoT</li>
+                            <li>Frontend: React, Vue.js, D3.js</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h5 class="font-bold mb-2">Certificaciones Incluidas</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Especialista en Industria 4.0</li>
+                            <li>Desarrollador de Automatización</li>
+                            <li>Analista de Datos Industriales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Route 3 -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8 route-card" style="border-color: #fbbc04;">
+                <h4 class="text-xl font-bold mb-4">🚀 Ruta 3: Innovación y Emprendimiento Sostenible</h4>
+                <p class="mb-4"><strong>Enfoque:</strong> Crear y escalar negocios basados en principios solarpunk y economía circular</p>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <h5 class="font-bold mb-2">Competencias Remotas</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Modelos de negocio circulares</li>
+                            <li>Marketing digital sostenible</li>
+                            <li>Finanzas para impacto</li>
+                            <li>Gestión de proyectos ágil</li>
+                            <li>Comunicación de impacto</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h5 class="font-bold mb-2">Proyectos Principales en Cuernavaca</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Lanzamiento Kickstarter Verde: Producto 100% sostenible</li>
+                            <li>Estrategia Digital MADFAM: Crecimiento multi-canal</li>
+                            <li>Alianzas Estratégicas: Red de partners sostenibles</li>
+                            <li>Mercado Latinoamericano: Expansión regional</li>
+                            <li>Métricas de Triple Impacto: Económico, social, ambiental</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h5 class="font-bold mb-2">Habilidades Desarrolladas</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Storytelling de sostenibilidad</li>
+                            <li>Gestión de comunidades digitales</li>
+                            <li>Análisis de mercado verde</li>
+                            <li>Desarrollo de partnerships</li>
+                            <li>Medición de impacto social</li>
+                            <li>Estrategias de crecimiento</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h5 class="font-bold mb-2">Certificaciones Incluidas</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Emprendedor Sostenible Certificado</li>
+                            <li>Especialista en Marketing Verde</li>
+                            <li>Gestor de Proyectos de Impacto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Route 4 -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12 route-card" style="border-color: #ea4335;">
+                <h4 class="text-xl font-bold mb-4">🔗 Ruta 4: Sistemas Digitales para Economía Circular</h4>
+                <p class="mb-4"><strong>Enfoque:</strong> Crear infraestructura digital para rastrear, verificar y optimizar flujos de materiales</p>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <h5 class="font-bold mb-2">Competencias Remotas</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Fundamentos de trazabilidad digital</li>
+                            <li>Sistemas distribuidos</li>
+                            <li>Estándares de verificación</li>
+                            <li>APIs para integración</li>
+                            <li>Seguridad de datos</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h5 class="font-bold mb-2">Proyectos Principales en Cuernavaca</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Pasaporte Digital de Materiales: Trazabilidad completa</li>
+                            <li>Certificación Digital Academy: Sistema de credenciales</li>
+                            <li>Marketplace Circular: Plataforma B2B de materiales</li>
+                            <li>Sistema de Puntos Verdes: Incentivos por reciclaje</li>
+                            <li>Red de Verificación: Auditoría descentralizada</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h5 class="font-bold mb-2">Desarrollo Técnico</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Arquitectura de microservicios</li>
+                            <li>Bases de datos inmutables</li>
+                            <li>Criptografía aplicada</li>
+                            <li>Integración de sistemas</li>
+                            <li>Análisis de cadena de suministro</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h5 class="font-bold mb-2">Certificaciones Incluidas</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Arquitecto de Sistemas Circulares</li>
+                            <li>Especialista en Trazabilidad Digital</li>
+                            <li>Auditor de Cadena de Suministro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Transversal Projects -->
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h3 class="text-2xl font-bold mb-6 section-title">🌟 Proyectos Transversales de Alto Impacto</h3>
+                <h4 class="text-xl font-semibold mb-4">Iniciativas que Unen Todas las Rutas</h4>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h5 class="font-bold mb-2">1. Cuernavaca Circular</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Mapeo digital de flujos de residuos</li>
+                            <li>Red de recicladores locales</li>
+                            <li>Sistema de intercambio de materiales</li>
+                            <li>Métricas de impacto comunitario</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h5 class="font-bold mb-2">2. Fab Lab Sostenible</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Espacio maker 100% circular</li>
+                            <li>Biblioteca de materiales reciclados</li>
+                            <li>Workshops comunitarios mensuales</li>
+                            <li>Certificación de makers verdes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h5 class="font-bold mb-2">3. MADFAM Impact Report</h5>
+                        <ul class="list-disc pl-5">
+                            <li>Dashboard público de sostenibilidad</li>
+                            <li>Métricas en tiempo real</li>
+                            <li>Casos de éxito documentados</li>
+                            <li>Estándares abiertos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PART III: Professional Development -->
+        <section id="career" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">PARTE III: DESARROLLO PROFESIONAL Y CARRERA</h2>
+            
+            <!-- Financial Investment -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">💰 Inversión en tu Futuro</h3>
+                
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold mb-4">Apoyo Económico</h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">Fase Remota</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Proyectos remunerados: $3,000-5,000 MXN/mes</li>
+                                <li>Bonos por certificaciones completadas</li>
+                                <li>Acceso gratuito a herramientas premium</li>
+                                <li>Reembolso de internet</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-green-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">Fase Cuernavaca</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Beca mensual: $10,000-15,000 MXN</li>
+                                <li>Apoyo para vivienda</li>
+                                <li>Comidas en las instalaciones</li>
+                                <li>Transporte local cubierto</li>
+                                <li>Seguro médico básico</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Incentivos por Resultados</h4>
+                    <ul class="list-disc pl-5">
+                        <li>Reducción de residuos: Bonos por KPI</li>
+                        <li>Proyectos exitosos: Participación en ganancias</li>
+                        <li>Publicaciones: Reconocimiento y premio</li>
+                        <li>Certificaciones: Aumento de beca</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Continuous Training -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">🎓 Formación Continua</h3>
+                
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold mb-4">Programa Académico Estructurado</h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <h5 class="font-bold mb-2">Módulos Core (Obligatorios)</h5>
+                            <ol class="list-decimal pl-5">
+                                <li>Filosofía Solarpunk Aplicada</li>
+                                <li>Economía Circular y LCA</li>
+                                <li>Transformación Digital Industrial</li>
+                                <li>Gestión de Proyectos Sostenibles</li>
+                                <li>Métricas de Impacto Triple</li>
+                            </ol>
+                        </div>
+                        
+                        <div>
+                            <h5 class="font-bold mb-2">Workshops Especializados</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Diseño Biomimético</li>
+                                <li>Automatización con Propósito</li>
+                                <li>Finanzas Sostenibles</li>
+                                <li>Innovación Frugal</li>
+                                <li>Liderazgo Regenerativo</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h5 class="font-bold mb-2">Certificaciones Profesionales</h5>
+                        <ul class="list-disc pl-5">
+                            <li>ISO 14001 Fundamentos</li>
+                            <li>Certificación B Corp Basics</li>
+                            <li>Scrum para Sostenibilidad</li>
+                            <li>Google Analytics para Impacto</li>
+                            <li>Design Thinking Circular</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Red de Mentores</h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="font-bold mb-2">Mentores Internos</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Líderes de proyecto MADFAM</li>
+                                <li>Especialistas técnicos</li>
+                                <li>Coaches de sostenibilidad</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h5 class="font-bold mb-2">Mentores Externos</h5>
+                            <ul class="list-disc pl-5">
+                                <li>CEOs de empresas B</li>
+                                <li>Expertos en economía circular</li>
+                                <li>Líderes de transformación digital</li>
+                                <li>Emprendedores sociales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Impact Ecosystem -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">🌐 Ecosistema de Impacto</h3>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Alianzas Estratégicas</h4>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h5 class="font-bold mb-2">Sector Privado</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Empresas B certificadas</li>
+                                <li>Startups de tecnología limpia</li>
+                                <li>Manufacturas en transición</li>
+                                <li>Consultoras de sostenibilidad</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h5 class="font-bold mb-2">Sector Académico</h5>
+                            <ul class="list-disc pl-5">
+                                <li>UNAM - Programa de Sostenibilidad</li>
+                                <li>Tec de Monterrey - Innovation Labs</li>
+                                <li>Universidad Iberoamericana - Centro de Diseño</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h5 class="font-bold mb-2">Sector Social</h5>
+                            <ul class="list-disc pl-5">
+                                <li>ONGs ambientales</li>
+                                <li>Cooperativas de recicladores</li>
+                                <li>Comunidades maker</li>
+                                <li>Redes de emprendimiento social</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Professional Trajectories -->
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h3 class="text-2xl font-bold mb-6 section-title">🚀 Trayectorias Profesionales Post-Programa</h3>
+                
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold mb-4">Oportunidades Inmediatas</h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">1. Líder de Transformación en MADFAM</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Gestión de proyectos de alto impacto</li>
+                                <li>Salario competitivo + beneficios</li>
+                                <li>Participación en decisiones estratégicas</li>
+                                <li>Path a socio</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">2. Consultor de Sostenibilidad Independiente</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Red de clientes MADFAM</li>
+                                <li>Certificación reconocida</li>
+                                <li>Apoyo continuo</li>
+                                <li>Comisiones por referidos</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">3. Emprendedor de Impacto</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Incubación en MADFAM</li>
+                                <li>Acceso a recursos y mentoría</li>
+                                <li>Posible inversión semilla</li>
+                                <li>Alianza estratégica</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">4. Especialista en Empresas Partner</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Colocación facilitada</li>
+                                <li>Salarios 30% sobre mercado</li>
+                                <li>Proyectos de vanguardia</li>
+                                <li>Crecimiento acelerado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Proyección a 5 Años</h4>
+                    <ul class="list-disc pl-5">
+                        <li>Director de Sostenibilidad: $50,000-80,000 MXN/mes</li>
+                        <li>CTO de Startup Verde: Equity + salario</li>
+                        <li>Consultor Senior Internacional: $100+ USD/hora</li>
+                        <li>Fundador de Empresa B: Impacto + rentabilidad</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PART IV: Selection Process -->
+        <section id="selection" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">PARTE IV: PROCESO DE SELECCIÓN</h2>
+            
+            <!-- Join the Change -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">📝 Únete al Cambio</h3>
+                
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold mb-4">Requisitos de Aplicación</h4>
+                    
+                    <h5 class="font-bold mb-2">Documentos Requeridos:</h5>
+                    <ol class="list-decimal pl-5">
+                        <li>CV Actualizado (máx. 2 páginas)</li>
+                        <li>Portafolio de Proyectos (énfasis en sostenibilidad)</li>
+                        <li>Ensayo de Visión (750 palabras): "Cómo la tecnología puede regenerar nuestro planeta"</li>
+                        <li>Video de Presentación (3 min): Tu proyecto de impacto soñado</li>
+                        <li>Carta de Recomendación (opcional pero valorada)</li>
+                    </ol>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Proceso de Evaluación</h4>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">Semana 1-2: Revisión Inicial</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Análisis de documentos</li>
+                                <li>Verificación de requisitos</li>
+                                <li>Primera preselección</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">Semana 3: Reto Técnico</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Asignación según ruta elegida</li>
+                                <li>1 semana para completar</li>
+                                <li>Enfoque en solución sostenible</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">Semana 4: Entrevistas</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Panel técnico (45 min)</li>
+                                <li>Evaluación de valores (30 min)</li>
+                                <li>Conversación con dirección (30 min)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">Semana 5-6: Proyecto Colaborativo</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Mini-proyecto en equipo</li>
+                                <li>Interacción con equipo MADFAM</li>
+                                <li>Evaluación de soft skills</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h5 class="font-bold mb-2">Semana 7: Decisión Final</h5>
+                            <ul class="list-disc pl-5">
+                                <li>Notificación de resultados</li>
+                                <li>Oferta detallada</li>
+                                <li>Plan de onboarding</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ideal Candidate Profile -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">🎯 Perfil del Candidato Ideal</h3>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Competencias Esenciales</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Pensamiento Sistémico: Ver conexiones e impactos</li>
+                            <li>Orientación a Resultados: Medir y mejorar constantemente</li>
+                            <li>Creatividad Aplicada: Innovar con propósito</li>
+                            <li>Colaboración Efectiva: Trabajar en equipos diversos</li>
+                            <li>Aprendizaje Continuo: Adaptarse y evolucionar</li>
+                            <li>Compromiso Ético: Valores sólidos de sostenibilidad</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Experiencia Valorada</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Proyectos con impacto ambiental demostrable</li>
+                            <li>Uso de tecnología para resolver problemas reales</li>
+                            <li>Participación en iniciativas comunitarias</li>
+                            <li>Conocimiento de economía circular</li>
+                            <li>Habilidades digitales básicas/intermedias</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Actitudes Fundamentales</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Optimismo pragmático</li>
+                            <li>Resiliencia ante desafíos</li>
+                            <li>Curiosidad tecnológica</li>
+                            <li>Empatía social</li>
+                            <li>Visión a largo plazo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Calendar 2025 -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">📅 Calendario 2025</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <ul class="space-y-3">
+                            <li><strong>Convocatoria Abierta:</strong> 15 enero - 15 febrero</li>
+                            <li><strong>Proceso de Selección:</strong> 16 febrero - 31 marzo</li>
+                            <li><strong>Inicio Fase Remota:</strong> 1 abril</li>
+                            <li><strong>Llegada a Cuernavaca:</strong> Julio-septiembre (flexible)</li>
+                            <li><strong>Graduación Estimada:</strong> Marzo-junio 2026</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <ul class="space-y-3">
+                            <li><strong>Plazas Disponibles:</strong> 8-10 aprendices</li>
+                            <li><strong>Distribución:</strong> 2-3 por ruta</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Program Impact -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">🌍 Impacto del Programa</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Métricas de Éxito 2024</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="mr-3 text-green-600">🌱</span>
+                                <span>15 toneladas de plástico recicladas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-green-600">💡</span>
+                                <span>12 empresas transformadas digitalmente</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-green-600">👥</span>
+                                <span>200+ personas capacitadas en sostenibilidad</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-green-600">📉</span>
+                                <span>35% reducción promedio en residuos de clientes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-green-600">🚀</span>
+                                <span>4 startups verdes incubadas</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Visión 2025-2027</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Centro de excelencia en manufactura circular</li>
+                            <li>Red de 100+ empresas sostenibles</li>
+                            <li>Estándar MADFAM de sostenibilidad digital</li>
+                            <li>Expansión a 5 países latinoamericanos</li>
+                            <li>Impacto medible en 10,000+ personas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonials -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">💬 Testimonios de Egresados</h3>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg testimonial">
+                        <p class="mb-4 italic">
+                            "MADFAM me enseñó que la sostenibilidad no es un costo, es una inversión. Ahora lidero la transformación digital de una de las manufacturas más grandes de México."
+                        </p>
+                        <p class="font-semibold">— Carlos Mendoza, Generación 2023, ahora Director de Innovación</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg testimonial">
+                        <p class="mb-4 italic">
+                            "El programa me dio las herramientas para lanzar mi startup de economía circular. En 6 meses ya tenemos 20 clientes y 3 empleados."
+                        </p>
+                        <p class="font-semibold">— Ana Sofía Ruiz, Generación 2023, Fundadora de CircularMX</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg testimonial">
+                        <p class="mb-4 italic">
+                            "La combinación de tecnología y sostenibilidad que aprendí en MADFAM me abrió puertas que ni sabía que existían. Ahora trabajo remotamente para una empresa B en Europa."
+                        </p>
+                        <p class="font-semibold">— Diego Hernández, Generación 2022, Consultor Internacional</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact and Next Steps -->
+            <div id="contact" class="bg-white rounded-lg shadow-md p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 section-title">📞 Contacto y Próximos Pasos</h3>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Canales Oficiales</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="mr-3 text-blue-600"><i class="fas fa-envelope"></i></span>
+                                <span>Email: <a href="/cdn-cgi/l/email-protection#f4809598919a809bb4999590929599da9d9b" class="text-blue-600 hover:underline"><span class="__cf_email__" data-cfemail="c3b7a2afa6adb7ac83aea2a7a5a2aeedaaac">[email&#160;protected]</span></a></span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-green-600"><i class="fab fa-whatsapp"></i></span>
+                                <span>WhatsApp Business: +52 55 XXXX XXXX</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-blue-800"><i class="fab fa-linkedin"></i></span>
+                                <span>LinkedIn: <a href="https://linkedin.com/company/innovaciones-madfam" class="text-blue-600 hover:underline">linkedin.com/company/innovaciones-madfam</a></span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-pink-600"><i class="fab fa-instagram"></i></span>
+                                <span>Instagram: @madfam.io</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-3 text-blue-600"><i class="fas fa-globe"></i></span>
+                                <span>Sitio Web: <a href="https://madfam.io/trainees" class="text-blue-600 hover:underline">madfam.io/trainees</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Sesiones Informativas</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Webinars Semanales: Miércoles 7:00 PM (CDMX)</li>
+                            <li>Tours Virtuales: Sábados 11:00 AM</li>
+                            <li>Q&A con Egresados: Último viernes del mes</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Recursos Adicionales</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Descarga el folleto detallado</li>
+                            <li>Ve casos de éxito en YouTube</li>
+                            <li>Lee nuestro blog de sostenibilidad</li>
+                            <li>Únete a nuestra comunidad en Discord</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div id="apply" class="bg-gradient-to-r from-blue-500 to-green-500 rounded-lg shadow-md p-8 text-white text-center">
+                <h3 class="text-2xl font-bold mb-6">🎯 ¿Listo para Liderar la Transformación Sostenible de América Latina?</h3>
+                
+                <p class="text-lg mb-6">
+                    En MADFAM no solo formamos profesionales—formamos líderes de cambio equipados con las herramientas, conocimientos y red necesaria para construir un futuro donde la tecnología y la naturaleza prosperen juntas.
+                </p>
+                
+                <p class="text-lg mb-8">
+                    Si crees que:
+                </p>
+                
+                <ul class="space-y-3 mb-8 text-left max-w-lg mx-auto">
+                    <li class="flex items-start">
+                        <span class="mr-3">✓</span>
+                        <span>La tecnología debe servir al planeta, no explotarlo</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3">✓</span>
+                        <span>La economía circular es el futuro de la manufactura</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3">✓</span>
+                        <span>La transformación digital debe ser accesible para todos</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3">✓</span>
+                        <span>América Latina puede liderar la revolución sostenible</span>
+                    </li>
+                </ul>
+                
+                <p class="text-lg mb-8">
+                    Entonces te estamos buscando.
+                </p>
+                
+                <a href="#" class="cta-button inline-block text-xl px-12 py-4 font-bold hover:bg-blue-700 transition duration-300">APLICA HOY</a>
+                
+                <p class="mt-6 text-sm">
+                    Construyendo el futuro sostenible de América Latina, un proyecto a la vez.
+                </p>
+                
+                <p class="mt-6">
+                    #TransformaciónDigitalSostenible #MADFAMImpact #SolarpunkMX #FabricaciónCircular #Cuernavaca2025
+                </p>
+                
+                <p class="mt-8 text-sm">
+                    MADFAM es un empleador que ofrece igualdad de oportunidades, comprometido con la diversidad, inclusión y el desarrollo sostenible.
+                </p>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">MADFAM</h4>
+                    <p class="mb-4">Manufactura Aditiva, Digitalización y Fabricación Avanzada Multimaterial</p>
+                    <p>Cuernavaca, Morelos, México</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-blue-300 transition">Quiénes Somos</a></li>
+                        <li><a href="#program" class="hover:text-blue-300 transition">El Programa</a></li>
+                        <li><a href="#routes" class="hover:text-blue-300 transition">Rutas de Especialización</a></li>
+                        <li><a href="#career" class="hover:text-blue-300 transition">Desarrollo Profesional</a></li>
+                        <li><a href="#selection" class="hover:text-blue-300 transition">Proceso de Selección</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <span class="mr-3"><i class="fas fa-envelope"></i></span>
+                            <span><a href="/cdn-cgi/l/email-protection#add9ccc1c8c3d9c2edc0ccc9cbccc083c4c2" class="hover:text-blue-300 transition"><span class="__cf_email__" data-cfemail="cfbbaea3aaa1bba08fa2aeaba9aea2e1a6a0">[email&#160;protected]</span></a></span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-3"><i class="fas fa-globe"></i></span>
+                            <span><a href="https://madfam.io" class="hover:text-blue-300 transition">madfam.io</a></span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-6 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2024 MADFAM. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
