@@ -14,12 +14,116 @@
             --accent-color: #fbbc04;
             --dark-color: #1e293b;
             --light-color: #f8fafc;
+            --text-color: #333;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --table-header-bg: #f1f5f9;
+            --table-border: #e5e7eb;
+            --timeline-dot: var(--primary-color);
+            --value-arrow: var(--secondary-color);
+        }
+        
+        [data-theme="dark"] {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --accent-color: #fbbc04;
+            --dark-color: #1e293b;
+            --light-color: #f8fafc;
+            --text-color: #e2e8f0;
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            --table-header-bg: #2d3748;
+            --table-border: #4a5568;
+            --timeline-dot: var(--primary-color);
+            --value-arrow: var(--secondary-color);
+            --blue-bg: #1a2234;
+            --green-bg: #1a2a1a;
+            --gray-bg: #1e1e1e;
+            --testimonial-quote: rgba(66, 133, 244, 0.3);
+            --link-color: #4285f4;
+            --footer-bg: #111827;
+            --footer-text: #e2e8f0;
+            --footer-link: #90cdf4;
+            --footer-link-hover: #63b3ed;
+            --icon-color: #4285f4;
         }
         
         body {
             font-family: 'Montserrat', sans-serif;
-            color: #333;
+            color: var(--text-color);
             line-height: 1.6;
+            background-color: var(--bg-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--text-color);
+            background-color: rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        [data-theme="dark"] .theme-toggle {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+        
+        .theme-toggle:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--primary-color);
+        }
+        
+        .theme-toggle i {
+            position: absolute;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle .fa-sun {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .theme-toggle .fa-moon {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        [data-theme="dark"] .theme-toggle .fa-sun {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        
+        [data-theme="dark"] .theme-toggle .fa-moon {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
         }
         
         h1, h2, h3, h4, h5, h6 {
@@ -49,6 +153,8 @@
         
         .card {
             transition: all 0.3s ease;
+            background-color: var(--card-bg);
+            box-shadow: var(--card-shadow);
         }
         
         .card:hover {
@@ -102,6 +208,10 @@
             font-family: Georgia, serif;
         }
         
+        [data-theme="dark"] .testimonial::before {
+            color: var(--testimonial-quote);
+        }
+        
         .table-container {
             overflow-x: auto;
         }
@@ -114,11 +224,11 @@
         th, td {
             padding: 0.75rem;
             text-align: left;
-            border-bottom: 1px solid #e5e7eb;
+            border-bottom: 1px solid var(--table-border);
         }
         
         th {
-            background-color: #f1f5f9;
+            background-color: var(--table-header-bg);
             font-weight: 600;
         }
         
@@ -151,6 +261,58 @@
             margin-bottom: 1rem;
         }
         
+        [data-theme="dark"] .bg-blue-50 {
+            background-color: var(--blue-bg);
+            color: var(--text-color);
+        }
+        
+        [data-theme="dark"] .bg-green-50 {
+            background-color: var(--green-bg);
+            color: var(--text-color);
+        }
+        
+        [data-theme="dark"] .bg-gray-50 {
+            background-color: var(--gray-bg);
+            color: var(--text-color);
+        }
+        
+        [data-theme="dark"] .text-gray-700 {
+            color: var(--text-color);
+        }
+        
+        [data-theme="dark"] .text-blue-600,
+        [data-theme="dark"] .hover\:text-blue-300 {
+            color: var(--link-color);
+        }
+        
+        [data-theme="dark"] .hover\:text-blue-300:hover {
+            color: var(--footer-link-hover);
+        }
+        
+        [data-theme="dark"] .text-green-600,
+        [data-theme="dark"] .text-blue-600,
+        [data-theme="dark"] .text-pink-600 {
+            color: var(--icon-color);
+        }
+        
+        [data-theme="dark"] .bg-white {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+        }
+        
+        [data-theme="dark"] .bg-gray-800 {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+        }
+        
+        [data-theme="dark"] .text-gray-400 {
+            color: var(--footer-text);
+        }
+        
+        [data-theme="dark"] .hover\:text-white:hover {
+            color: white;
+        }
+        
          {
             .page-break {
                 margin-top: 2rem;
@@ -158,7 +320,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50" style="background-color: var(--bg-color);">
     <!-- Hero Section -->
     <header class="hero-section py-16 px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto text-center">
@@ -170,15 +332,21 @@
     </header>
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50" style="background-color: var(--card-bg);">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-center flex-wrap gap-4">
-                <a href="#about" class="text-gray-700 hover:text-primary-500 px-3 py-2">Quiénes Somos</a>
-                <a href="#program" class="text-gray-700 hover:text-primary-500 px-3 py-2">El Programa</a>
-                <a href="#routes" class="text-gray-700 hover:text-primary-500 px-3 py-2">Rutas de Especialización</a>
-                <a href="#career" class="text-gray-700 hover:text-primary-500 px-3 py-2">Desarrollo Profesional</a>
-                <a href="#selection" class="text-gray-700 hover:text-primary-500 px-3 py-2">Proceso de Selección</a>
-                <a href="#contact" class="text-gray-700 hover:text-primary-500 px-3 py-2">Contacto</a>
+            <div class="flex justify-between items-center">
+                <div class="flex justify-center flex-wrap gap-4">
+                    <a href="#about" class="text-gray-700 hover:text-primary-500 px-3 py-2" style="color: var(--text-color);">Quiénes Somos</a>
+                    <a href="#program" class="text-gray-700 hover:text-primary-500 px-3 py-2" style="color: var(--text-color);">El Programa</a>
+                    <a href="#routes" class="text-gray-700 hover:text-primary-500 px-3 py-2" style="color: var(--text-color);">Rutas de Especialización</a>
+                    <a href="#career" class="text-gray-700 hover:text-primary-500 px-3 py-2" style="color: var(--text-color);">Desarrollo Profesional</a>
+                    <a href="#selection" class="text-gray-700 hover:text-primary-500 px-3 py-2" style="color: var(--text-color);">Proceso de Selección</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary-500 px-3 py-2" style="color: var(--text-color);">Contacto</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -1399,5 +1567,44 @@
             </div>
         </div>
     </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
+    // Dark mode toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    // Check for saved theme preference or prefer-color-scheme
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const savedTheme = localStorage.getItem('theme');
+    
+    // If the user has explicitly chosen a theme, use it
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    } else if (prefersDarkScheme.matches) {
+        // If no saved preference, but system prefers dark mode, use dark theme
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    
+    // Toggle theme when button is clicked
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        
+        // Announce theme change for screen readers
+        const announcement = document.createElement('div');
+        announcement.setAttribute('aria-live', 'polite');
+        announcement.classList.add('sr-only'); // Screen reader only
+        announcement.textContent = `Theme changed to ${newTheme} mode`;
+        document.body.appendChild(announcement);
+        
+        // Remove announcement after it's been read
+        setTimeout(() => {
+            document.body.removeChild(announcement);
+        }, 3000);
+    });
+</script>
+</body>
 </html>
