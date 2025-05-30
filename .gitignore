@@ -1,0 +1,22 @@
+# General
+.DS_Store
+.env
+.vscode/
+
+# Dependencies
+/node_modules
+
+# Build artifacts
+/dist
+/build
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS generated files
+.localized
+.project
+.settings/
+.vs/
+Thumbs.db
